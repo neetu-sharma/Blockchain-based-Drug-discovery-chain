@@ -1,0 +1,27 @@
+OrdererOrgs:
+  - Name: Orderer
+    Domain: drug-discovery-network.com
+    Specs:
+      - Hostname: orderer
+PeerOrgs:
+ - Name: researchanddevelopment
+   Domain: researchanddevelopment.drug-discovery-network.com
+   EnableNodeOUs: true
+   Template:
+      Count: 2
+   Users:
+      Count: 1
+ - Name: regulatory
+   Domain: regulatory.drug-discovery-network.com
+   EnableNodeOUs: true
+   Template:
+      Count: 2
+   Users:
+      Count: 1
+ - Name: testingandtrial
+   Domain: testingandtrial.drug-discovery-network.com
+   EnableNodeOUs: true
+   Template:
+      Count: 2
+   Users:
+      Count: 1
